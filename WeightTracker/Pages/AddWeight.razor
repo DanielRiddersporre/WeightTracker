@@ -1,0 +1,19 @@
+﻿@page "/addweight"
+@inject HttpClient Http
+
+<PageTitle>AddWeight</PageTitle>
+
+<h3>AddWeight</h3>
+<form>
+    <label>Weight</label>
+    <input />
+    <button @onclick="RegisterWeight" formaction="Send">Register Weight</button>
+</form>
+
+
+@code {
+    public void RegisterWeight()
+    {
+        Console.WriteLine("Button works!");
+    }
+}
